@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+.navlogo{
+    width: 10%;
+}
+.navlogo img{
+    width: 100%;
+}
+.dashnavlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 80%;
+    align-items: center;
+}
+.icon-image{
+    margin: 0 20px;
+    background-color: #EDE9FA;
+    border-radius: 15px;
+    /* width: 5%; */
+    text-align: center;
+    /* padding: 5px 0; */
+    height: 25px;
+}
+.iconImage-bg-none{
+    background-color:white;
+}
+.icon-image img{
+    width: 100%;
+    height: 20px;
+}
+.fundAndWithdraw-screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: inherit;
+}
+.fundAndWithdrawal-aside{
+    background-color: #3B065E;
+    height: auto;
+    padding: 30px 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+.fundAndWithdrawal-aside h3{
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 1rem;
+}
+.fundAndWithdrawal-list{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-items: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 1rem;
+    height: inherit;
+}
+.fundAndWithdrawal-list a{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+    margin: auto;
+    margin-top: 2.6rem;
+}
+.fundAndWithdrawal-list .logout{
+    margin-top: 8rem !important;
+}
+.dashboard-asideicon{
+    margin-right: 1.5rem;
+    font-size: 15px;
+    /* background-color: white;
+    color: #3B065E; */
+}
+.fundAndWithdraw-section{
+    /* height: inherit; */
+    /* padding: 10px; */
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    align-items: center;
+    background-color: #F8F9FB;
+}
+.fundAndWithdraw-content{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: inherit; */
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+}
+.dashboard-fundAndWithdrawal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem 0; */
+}
+.dashboard-fundAndWithdrawal span .dashboard-link{
+    text-decoration: none;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+.dashboard-fundAndWithdrawal span .phonerecharge-link{
+    text-decoration: none;
+    font-size: 12px;
+}
+.fundAndWithdraw-links{
+    width: 50%;
+    margin: auto; 
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    /* padding: 10px; */
+}
+.fundAndWithdraw-links a{
+    text-decoration: none;
+    color: #555356;
+    padding: 15px;
+    font-size: 12px;
+}
+.fundWallet{
+    width: 95%;
+    /* padding: 10px 0; */
+}
+.bankWithdraw, .walletTransfer{
+    width: 95%;
+    margin: auto;
+    /* display: none; */
+}
+.fundWallet-section.active, .bankWithdraw-section.active{
+    display: block;
+}
+.fundWallet-section, .bankWithdraw-section{
+    width: 85%;
+    /* height: inherit; */
+    align-content: center;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* margin-top: 3rem; */
+    padding: 30px 0;
+    display: none;
+}
+.bankWithdraw-section .withdraw-header{
+    margin-left: 2rem;
+    font-size: 15px;
+    font-weight: 450;
+}
+.bankWithdraw-section .message{
+    background-color: #EDE9FA;
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+}
+.message h4{
+    font-size: 12px;
+    font-weight: 400;
+    width: 85%;
+    margin: auto;
+}
+.message p{
+    font-size: 12px;
+    color: #732AA3;
+    width: 85%;
+    margin: auto;
+}
+.fundPerfectBiller{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: inherit;
+    align-content: center;
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #D3D8DD;
+    padding: 10px 0;
+}
+.fundPerfectBiller .perfectBiller-formHeader{
+    width: 90%;
+}
+.fundPerfectBiller h3{
+    font-size: 17px;
+    font-weight: 400;
+    /* width: 40%; */
+}
+.fundPerfectBiller .walletBalance{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: inherit;
+    align-items: center;
+}
+.fundPerfectBiller .walletBalance h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.fundPerfectBiller .walletBalance strong{
+    background-color: #EDE9FA;
+    padding: 5px;
+    font-weight: 550;
+}
+.fundPerfectBillerWallet-form{
+    width: 80%;
+    margin: auto;
+    /* padding: 30px 0; */
+}
+.perfectBiller-formHeader h3{
+    /* color: white; */
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+}
+.walletForm{
+    width: 80%;
+    margin: auto;
+    background-color: #F5F6F8;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+.select-wallet{
+    margin-bottom: 1.5rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.wallet-amountToPay{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wallet-amountToPay input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 1rem;
+}
+.walletForm .wallet-amountToPay{
+    width: 80%;
+} 
+.walletForm .wallet-amountToPay label{
+    margin-right: 1rem;
+    color: #3B065E;
+    background-color: #EDE9FA;
+}
+.walletForm button{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    background-color: #3B065E;
+    color: #FFFFFF;
+}
+.wallet-optionSelect{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-items: center;
+    align-items: center;
+}
+.wallet-optionSelect h4{
+    width: 80%;
+    margin: 1.5rem;
+}
+.wallet-optionSelect button{
+    width: 50%;
+    margin: 2rem 0;
+    padding: 20px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.wallet-optionSelect button.selectFund{
+    background-color: #3B065E;
+    color: #FFFFFF;
+}
+.fundWallet-cardDetail{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.fundWallet-cardDetail h3{
+    margin: 2rem 0;
+    color: #555356;
+}
+.cardNumber, .cardName, .cardExpiry, .saveCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 1rem 0;
+    align-items: center;
+    /* justify-content: center; */
+}
+.cardNumber label, .cardName label{
+    width: 100%;
+}
+.cardNumber input, .cardName input{
+    width: 90%;
+    padding: 15px;
+    background-color: #F9FCFF;
+    border: 1px solid rgba(23, 153, 192, 0.363);
+    border-radius: 5px;
+    /* justify-items: center; */
+}
+.cardExpiry span{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+}
+.cardExpiry .expiry{
+    margin-right: 1.5rem;
+}
+.cardExpiry span input{
+    width: 95%;
+    padding: 10px;
+    background-color: #F9FCFF;
+    border: 1px solid rgba(23, 153, 192, 0.363);
+}
+.saveCard input{
+    margin-right: 1rem;
+}
+.fundWallet-button{
+    background-color: #3B065E;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 55%;
+    border-style: none;
+}
+.bankWithdraw-section .bankWithdrawal-form, .walletTransfer-form{
+    display: flex;
+    height: inherit;
+    width:70%;
+    padding: 0 8rem;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: auto;
+}
+.walletTransfer-form{
+    margin-top: 3rem;
+}
+.bankWithdrawal-form .select-wallet{
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+.walletTransfer-form .select-wallet{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.bankWithdrawal-form label, .walletTransfer-form label{
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+.bankWithdrawal-form input, .walletTransfer-form input{
+    background-color: #e8f3fd;
+    border-style: none;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+.walletTransfer-form input{
+    padding: 20px;
+}
+.bankWithdrawal-form .saveCard, .walletTransfer-form .saveCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.walletTransfer-form .saveCard{
+    margin-top: 2rem;
+}
+
+.phonerecharge-form .form{
+    display: flex;
+    height: inherit;
+    width:70% ;
+    padding: 0 8rem;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: auto;
+}
+.phonerecharge-form .form label{
+    font-weight: bold;
+    font-size: 12px;
+}
+.phonerecharge-form .form label.mini-amount{
+    font-weight: lighter;
+    font-size: 8px;
+    font-weight: bold;
+    margin-top: -2.8rem;
+    margin-bottom: 2.8rem;
+}
+.phonerecharge-form .form input{
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 2.8rem;
+    background-color: #F8F9FB;
+    border: none;
+    outline: none;
+}
+.phoneSubmit{
+    background-color: #3B065E;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+}
+.purchasesuccess-content{
+    width: 90%;
+    /* height: inherit; */
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Average Sans', sans-serif;
+}
+.purchased-icon{
+    color: green;
+    font-size: 80px;
+    /* margin: 4rem 0; */
+}
+.purchasesuccess-content p{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 18px;
+}
+.purchased-btn{
+    padding: 12px;
+    width: 40%;
+    margin-top: 3rem;
+}
+.isactive{
+    background-color: #FFFFFF;
+    color: #3B065E;
+}
+.tab-content{
+    display: none;
+}
+.show-content{
+    display:block
+}
+.hide-content{
+    display:none
+}
+.bankWithdrawSuccessful, .bankWithdrawTwo{
+    display: none;
+}
+.saveBankCard{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 3px;
+    box-shadow: 0.8px 0 0.8px 0;
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    align-items: center;
+}
+.bankCardNumber{
+    font-size: 12px;
+    margin: 3px;
+}
+.dropDownContent{
+    display: none;
+}
+@media screen and (max-width:1024px){
+    .fundAndWithdraw-screen{
+        width: 100%;
+    }
+    .fundAndWithdrawal-aside{
+        width: 40%;
+        left: -100%;
+        position: absolute;
+    }
+    .activate{
+        left: 0;
+    }
+    .fundAndWithdraw-links{
+        width: 70%;
+    }
+    .fundAndWithdraw-section{
+        width: 100%;
+        margin: auto;
+    }
+    .phonerecharge-form{
+        width: 90%;
+    }
+    .phonerecharge-form form{
+        padding: 2rem;
+    }
+    .dropDownContent{
+        display: flex;
+    }
+    .fundBackdrop{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    .fundAndWithdrawal-aside{
+        width: 60%;
+        left: -100%;
+        position: absolute;
+    }
+    .activate{
+        left: 0;
+    }
+    .fundAndWithdrawal-list a{
+        display: flex;
+    }
+    .fundAndWithdrawal-list span{
+        display: block;
+    }
+    .dashboard-asideicon{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .fundAndWithdraw-section{
+        padding: 5px;
+        /* position: relative; */
+    }
+    .fundAndWithdraw-content{
+        width: 100%;
+    }
+    .dashboard-fundAndWithdrawal span .dashboard-link{
+        font-size: 12px;
+    }
+    .dashboard-fundAndWithdrawal span .phonerecharge-link{
+        font-size: 12px;
+    }
+    .phonePurchase-form{
+        width: 100%;
+        padding: 5px;
+    }
+    .phonerecharge-form .form{
+        padding: 3rem 1rem;
+    }
+    .phoneSubmit{
+        padding: 8px 0;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .purchasesuccess-content span{
+        font-size: 18px;
+    }
+    .purchasesuccess-content p{
+        font-size: 12px;
+    }
+    .purchased-icon{
+        font-size: 35px;
+    }
+    .purchased-btn{
+        padding: 8px;
+    }
+    .fundWallet-section{
+        width: 100%;
+    }
+    .fundPerfectBiller h3{
+        width: 100%;
+        text-align: center;
+    }
+    .walletBalance{
+        width: 80% !important;
+        margin: 1rem;
+    }
+    .walletForm{
+        width: 100%;
+    }
+    .walletForm .select-wallet{
+        width: 90%;
+    }
+    .fundAndWithdraw-links{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .fundAndWithdraw-links a{
+        padding: 5px;
+    }
+    .bankWithdraw-section .bankWithdrawal-form{
+        width: 95%;
+        padding: 5px;
+    }
+    .fundWallet-cardDetail{
+        width: 90%;
+    }
+    .cardNumber, .cardName, .cardExpiry, .saveCard{
+        width: 100%;
+    }
+    .dropDownContent{
+        display: flex;
+    }
+    .fundDropdown{
+        margin-left: -2rem;
+    }
+    .fundBackdrop{
+        margin-left: -2rem;
+        display: none;
+    }
+}

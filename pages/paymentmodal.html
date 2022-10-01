@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Modal</title>
+    <link rel="stylesheet" href="../css/paymentmodal.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="payment-section">
+      <div class="cancel-icon">
+        <a href="#"><i class="fas fa-window-close"></i></a>
+      </div>
+      <div id="payment-modal-container">
+        <aside>
+          <div id="payment-options">
+            <div>
+              <h6>PAY WITH</h6>
+            </div>
+            <ul class="payment-links">
+              <a href="#paywithcard">
+                <li
+                  class="pagelinks"
+                  id="default"
+                  onclick="switchPage(event, 'paywithcard')"
+                >
+                  <i class="fas fa-credit-card icons"></i>Card
+                </li>
+              </a>
+              <a href="#paywithbank">
+                <li
+                  class="pagelinks"
+                  onclick="switchPage(event, 'paywithbank')"
+                >
+                  <i class="fas fa-university icons"></i>Bank
+                </li>
+              </a>
+              <a href="#paywithtransfer">
+                <li
+                  class="pagelinks"
+                  onclick="switchPage(event, 'paywithtransfer')"
+                >
+                  <i class="fas fa-university icons"></i
+                  ><i class="fas fa-arrow-circle-right icons"></i>Transfer
+                </li>
+              </a>
+              <a href="#paywithussd">
+                <li
+                  class="pagelinks"
+                  onclick="switchPage(event, 'paywithussd')"
+                >
+                  <span class="icons ussd">*#</span>USSD
+                </li>
+              </a>
+              <a href="#paywithvisaqr">
+                <li
+                  class="pagelinks"
+                  onclick="switchPage(event, 'paywithvisaqr')"
+                >
+                  <i class="fas fa-mobile-alt icons visa"></i>Visa QR
+                </li>
+              </a>
+            </ul>
+          </div>
+        </aside>
+        <div id="payment-form">
+          <div class="payment-logo-info">
+            <div class="logo">
+              <img
+                src="../assets/images/perfectbillerlogo e.png"
+                alt="Perfect Biller Logo"
+              />
+              <!-- <p>Logo</p> -->
+            </div>
+            <div class="payment-info">
+              <p>janedoe@gmail.com</p>
+              <p>Pay<span class="payment-amount"> NGN 4,000</span></p>
+            </div>
+          </div>
+
+          <!-------------- Pay with Card ----------------->
+          <div id="paywithcard" class="paywith">
+            <div id="card-details-page" class="card-payment">
+              <div class="card-icon">
+                <i class="fas fa-credit-card icons"></i>
+              </div>
+              <h6 class="write-up">Enter your card details to pay</h6>
+              <div class="card-details">
+                <label for="card-number">Card Number</label>
+                <input
+                  type="text"
+                  name="card-number"
+                  maxlength="20"
+                  pattern="[0-9]"
+                  placeholder="0000 0000 0000 0000"
+                  required
+                />
+              </div>
+              <div id="expiry-date-cvv">
+                <div class="expiry-date">
+                  <label for="expiry date">Expiry Date</label>
+                  <input
+                    type="text"
+                    placeholder="MM / YY"
+                    name="expirydate"
+                    required
+                  />
+                </div>
+                <div class="cvv">
+                  <label for="cvv">CVV<a href="#">Help?</a></label>
+                  <input
+                    type="text"
+                    name="cvv"
+                    maxlenght="3"
+                    pattern="[0-9]"
+                    placeholder="123"
+                    required
+                  />
+                </div>
+              </div>
+              <input
+                type="button"
+                value="Pay NGN 4,000"
+                class="continue-payment"
+                onclick="contCardPay(event, 'cardpin')"
+              />
+              <a href="#" class="saved-card">Pay with a saved card</a>
+            </div>
+            <div class="card-pin card-payment" id="cardpin">
+              <p class="write-up">
+                Please enter your 4-digit pin to authorize this payment
+              </p>
+              <div class="enter-pin">
+                <input type="password" maxlength="1" pattern="[0-9]" />
+                <input type="password" maxlength="1" pattern="[0-9]" />
+                <input type="password" maxlength="1" pattern="[0-9]" />
+                <input type="password" maxlength="1" pattern="[0-9]" />
+              </div>
+              <div class="continue-cancel-links">
+                <button
+                  class="continue-payment"
+                  onclick="contCardPay(event, 'otpkey')"
+                >
+                  Continue
+                </button>
+                <a href="#">Cancel</a>
+              </div>
+            </div>
+            <div class="otp card-payment" id="otpkey">
+              <div class="otp-icon">
+                <i class="fas fa-mobile-alt phone"></i>
+                <i class="fas fa-comment-dots message"></i>
+              </div>
+              <p class="write-up">
+                Please enter the OTP sent to your phone number
+              </p>
+              <div class="enter-otp">
+                <input type="text" pattern="[0-9]" />
+                <input
+                  type="button"
+                  value="Authorize"
+                  class="continue-payment"
+                  onclick="contCardPay(event, 'paymentsuccess')"
+                />
+              </div>
+              <a href="#">Cancel</a>
+            </div>
+            <div class="payment-successful card-payment" id="paymentsuccess">
+              <div class="payment-successful-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h4>Payment Successful</h4>
+              <p>You have made a payment of NGN 4,000 to Perfect Biller</p>
+            </div>
+          </div>
+
+          <!-- Pay With Bank -->
+          <div id="paywithbank" class="paywith">
+            <div class="paywithbank-icon">
+              <i class="fas fa-university icons"></i>
+            </div>
+            <h6 class="write-up">Choose your bank to pay</h6>
+            <select name="banks" id="banks">
+              <option value="choice">Choose a bank</option>
+              <option value="zenith">Zenith Bank</option>
+              <option value="gtBank">Guaranty Trust Bank</option>
+              <option value="wema">Wema Bank</option>
+              <option value="uba">Zenith Bank</option>
+              <option value="access">Access Bank</option>
+              <option value="first">First Bank</option>
+            </select>
+          </div>
+
+          <!-- Pay with transfer -->
+          <div id="paywithtransfer" class="paywith">
+            <div class="transfer-icon">
+              <i class="fas fa-university icons"></i
+              ><i class="fas fa-arrow-circle-right icons"></i>
+            </div>
+            <h6 class="write-up">
+              Transfer <span>NGN 4,000</span> to complete payment
+            </h6>
+            <div class="transfer-details">
+              <h4>Zenith Bank</h4>
+              <h3>1234567890</h3>
+              <p>Use this account for this transaction</p>
+            </div>
+            <a href="#" class="transfer-done">I've sent the money</a>
+          </div>
+
+          <!---USSD Transaction  -->
+          <div id="paywithussd" class="paywith">
+            <div class="ussd-icon"><h3>*#</h3></div>
+            <h6 class="write-up">Choose your bank to make payment</h6>
+            <!-- <div class="ussd-banks"> -->
+            <a href="#">
+              <div class="ussd-code">
+                <p>GT Bank</p>
+                <p>*737#</p>
+              </div></a
+            >
+            <a href="#">
+              <div class="ussd-code">
+                <p>UBA</p>
+                <p>*919#</p>
+              </div></a
+            >
+            <!-- </div> -->
+          </div>
+          <!-- PAY WITH VISA QR-->
+          <div id="paywithvisaqr" class="paywith">
+            <div class="visa-icon">
+              <i class="fas fa-mobile-alt icons visa"></i>
+            </div>
+            <!-- <h2>VISA</h2> -->
+            <p>
+              Scan the QR code below in your Mobile Bank App to complete your
+              payment
+            </p>
+            <div class="qrcode"></div>
+          </div>
+          <!-- <div class="payment-successful-mobile card-payment" id="paymentsuccess">
+            <div class="payment-successful-icon"><i class="fas fa-check-circle"></i></div>
+            <h4>Payment Successful</h4>
+            <p>You have made a payment of NGN 4,000 to Perfect Biller</p>
+          </div> -->
+          <div class="cancel-payment"><a href="#">Cancel Payment</a></div>
+        </div>
+      </div>
+      <!-- <div class="payment-successful card-payment" id="paymentsuccess">
+        <div class="payment-successful-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h4>Payment Successful</h4>
+        <p>You have made a payment of NGN 4,000 to Perfect Biller</p>
+      </div> -->
+    </section>
+    <script src="../css/fontawesome-free-5.15.4-web/js/all.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

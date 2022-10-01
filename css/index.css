@@ -1,0 +1,839 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.headerComponents{
+    background-color:  #3B065E;
+    color: white;
+    height: 120vh;
+    margin-bottom: 50px;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    /* height: inherit; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    /* padding-top: 30px; */
+    position: fixed;
+    top: 0;
+    background-color: #3B065E;
+}
+.navbar .navlogo{
+    width: 15%;
+}
+.navbar .navlogo img{
+    width: 100%;
+    /* clip: rect(30%, 0, 30%, 0); */
+    /* object-fit: cover;
+    object-position: 20% 0; */
+}
+.navbar .nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar .nav-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.navbar .nav-list a:hover{
+    border-bottom: 2px solid #00E6D9;
+    cursor: pointer;
+}
+.navbar .nav-list a.signin{
+    background-color: #00E6D9;
+    color: black;
+    border-radius: 5px;
+}
+.navbar .nav-list a i{
+    color: #00E6D9;
+}
+.navbar .nav-list .dropdown{
+    display: none;
+}
+.bannerDisplay{
+    /* margin-top: 110px; */
+    padding: 0 150px;
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #3B065E;
+    width: 100%;
+}
+.bannerDisplay-overlay{
+    margin-top:210px ;
+    width: 100%;
+    justify-content: space-between;
+    height: 85vh;
+    display: flex;
+}
+.bannerDisplay .bannerWriteup{
+    width: 60%;
+    margin-top: 70px;
+}
+.bannerDisplay .bannerWriteup h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+.bannerDisplay .bannerWriteup p{
+    margin: 40px 0;
+    color:  #ABC9FD;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.bannerDisplay button{
+    padding:20px 60px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00E6D9;
+}
+.bannerImage{
+    width: 30%;
+    height: inherit;
+}
+.bannerLowerImage{
+    width: 100%;
+    background: url("../assets/map\ 1.png");
+    height: 45vh;
+    position: absolute;
+    background-size: cover;
+    top: 500px;
+}
+/* ---------- header ends here ----------*/
+.billPayment-container{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    padding: 0 50px;
+    align-items: center;
+}
+.billPayment-advert{
+    width: 40%;
+    height: inherit;
+    margin-bottom: 10rem;
+}
+.billPayment-advert img{
+    width: 100%;
+}
+.billPayment-writeup{
+    height: 40vh;
+    width: 50%;
+}
+.billPayment-writeup h1{
+    font-size: 60px;
+    color: #3B065E;
+}
+.billPayment-writeup h3{
+    color: #555356;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+.billPayment-writeup p{
+    font-size: 18px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.billPayment-writeup button{
+    padding:15px 60px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00E6D9;
+}
+.service-container{
+    margin: 90px 0;
+}
+.service-container .service-header{
+    width: 100%;
+    text-align: center;
+    margin: 85px 0;
+}
+.service-container .service-header h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #3B065E;
+}
+.service-container .service-header p{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    width: 45%;
+    margin: auto;
+    color:#555356;
+}
+.service-container .service-items{
+    /* background-color: #E5E5E5; */
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 80%;
+}
+.service-container .service-items .serviceItem-content{
+    height: 60vh;
+    width: 30%;
+    padding: 50px 30px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #E5E5E5;
+    justify-content: center;
+}
+.service-container .service-items .serviceItem-content .serviceItem-image{
+    width: 25%;
+    margin: auto;
+}
+.service-container .service-items .serviceItem-content .serviceItem-image img{
+    width: 100%;
+    height: 80px;
+}
+.serviceItem-image .mobile-tvImage{
+    display: none;
+}
+.serviceItem-writeup{
+    text-align: center;
+}
+.serviceItem-writeup h3{
+    color: #555356;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.serviceItem-writeup p{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 5rem;
+}
+.serviceItem-writeup a{
+    text-decoration: none;
+    color: black;
+}
+.serviceItem-writeup a:hover{
+    background-color: #00E6D9;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.easyIntegration-container, .helpservice-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.easyIntegration-writeup, .helpservice-writeup{
+    width: 40%;
+}
+.easyIntegration-writeup h1, .helpservice-writeup h1{
+    font-size: 50px;
+    color:#3B065E;
+}
+.easyIntegration-writeup p, .helpservice-writeup p{
+    margin: 3rem 0;
+    font-size: 15px;
+}
+.helpservice-writeup p span{
+    color: #00E6D9;
+}
+.easyIntegration-writeup a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #00E6D9;
+    padding: 10px 40px;
+}
+.helpservice-writeup h3{
+    color: #555356;
+    font-size: 25px;
+    margin: 3rem 0;
+    font-weight: bold;
+}
+.easyIntegration-image, .helpservice-image{
+    width: 40%;
+}
+.easyIntegration-image img, .helpservice-image img{
+    width: 100%;
+}
+.download-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+}
+.downloadContainer-writeup{
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+.downloadContainer-writeup h1{
+    color: #00E6D9;
+    font-size: 30px;
+}
+.downloadContainer-writeup h3{
+    font-size: 25px;
+    color: #555356;
+    margin: 2rem 0;
+}
+.downloadstore{
+    background-color: #3B065E;
+    color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding: 20px 80px;
+    border-radius: 15px;
+}
+.downloadstore h3{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.downloadstore .downloadPhone-image{
+    /* position: absolute; */
+    width: 20%;
+    margin-left: 2rem;
+    margin-top: -13rem;
+}
+.footer-components{
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    display: flex;
+    background-color: #3B065E;
+    justify-content: space-around;
+    color: white;
+}
+.footer-list{
+    display: flex;
+    flex-direction:column;
+}
+.footer-list a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 5px  0;
+}
+/* .footer-list a li{
+    
+} */
+.footer-list a:hover{
+    border-bottom: 2px solid #00E6D9;
+    cursor: pointer;
+}
+.mobileview-only{
+    display: none;
+}
+/* ----------------- Desktopview ends here ------------------------ */
+@media screen and (max-width:1024px) {
+    .headerComponents{
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .navbar{
+        width: 100%;
+        padding: 10px 10px !important;
+    }
+    .navlogo{
+        width: 20% !important;
+    }
+    .nav-list{
+        width: 72% !important;
+        padding: 0 !important;
+    }
+    .headerComponents{
+        height: inherit;
+        width: 100%;
+    }
+    .bannerDisplay{
+        height: inherit !important;
+        width: 90%;
+        padding: 10px;
+    }
+    .bannerDisplay-overlay{
+        width: 90%;
+        margin: auto;
+        height: inherit !important;
+        /* padding: 10px; */
+        margin-top: 90px;
+    }
+    .bannerLowerImage{
+        height: 25vh;
+    }
+    .billPayment-container{
+        padding: 20px;
+        align-items: center;
+        height: inherit;
+        margin-bottom: 10rem;
+    }
+    .billPayment-advert{
+        width: 40%;
+    }
+    .billPayment-writeup{
+        height: 20vh;
+        align-items: center !important;
+    }
+    .billPayment-writeup h1{
+        font-size: 45px;
+    }
+    .service-container .service-header p{
+        width: 50%;
+    }
+    .service-items{
+        width: 98% !important;
+        height: inherit;
+    }
+    .service-items .serviceItem-content{
+        height: inherit !important;
+    }
+    .easyIntegration-container{
+        width: 90%;
+        margin-top: 9rem;
+        margin-bottom: 9rem;
+    }
+    .helpservice-container{
+        width: 90%;
+    }
+    .helpservice-image{
+        width: 40%;
+    }
+    .helpservice-image img{
+        width: 90%;
+    }
+    .helpservice-writeup h1{
+        font-size: 44px;
+    }
+    .download-container{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .downloadstore{
+        width: 98%;
+        padding: 0 25px;
+        height: 11vh;
+    }
+    .downloadstore .downloadPhone-image{
+        margin-left: 0;
+        width: 15%;
+    }
+}
+@media screen and (max-width: 995px){
+    .headerComponents{
+        height: inherit;
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        position: none !important;
+    }
+    .nav-list{
+        left: -100%; 
+        width: 100% !important;
+    }
+    .navbar .navlogo{
+        width: 45% !important;
+    }
+    .navbar .nav-list li{
+        /* margin: 4rem 0; */
+        display: none;
+    }
+    .navbar .nav-list .dropdown{
+        display: block !important;
+        right: 0;
+        margin-left: 28rem;
+        font-size: 40px;
+    }
+    .navbar .nav-list.responsiveNav{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding-top: 40px !important;
+        width: 100%;
+        transition: 0.5s;
+        left: 0;
+        right: 0;
+        top: 0rem;
+        background-color: black;
+    }
+    .navbar .nav-list.responsiveNav li{
+        display: block;
+        margin: 2rem 0;
+    }
+    .navbar .nav-list.responsiveNav li.dropdown{
+        position: absolute;
+        left: 40rem;
+        top: 0;
+    }
+    
+    .bannerDisplay{
+        padding: 10px 50px;
+        display: flex;
+        height: inherit;
+        width: 100% !important;
+    }
+    .bannerDisplay-overlay{
+        width: 100% !important;
+        margin-top:5rem;
+        height: inherit;
+        flex-direction: column;
+    }
+    .bannerDisplay .bannerWriteup{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .bannerDisplay .bannerWriteup h1{
+        font-size: 50px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+    .bannerDisplay .bannerWriteup p{
+        margin: 30px 0;
+        color:  #ABC9FD;
+        letter-spacing: 0.5px;
+        font-size: 30px;
+    }
+    .bannerDisplay button{
+        padding:20px 30px;
+        width: 50%;
+        margin-bottom: 5rem;
+        font-size: 25px;
+    }
+    .bannerImage{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bannerImage img{
+        width: 70%;
+        height: 500px;
+    }
+    .bannerLowerImage{
+        width: 100%;
+        background: url("../assets/map\ 1.png");
+        height: 30vh;
+        position: absolute;
+        background-size: cover;
+        top: 600px;
+    }
+    .billPayment-container{
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: auto;
+        height: inherit;
+    }
+    .billPayment-writeup{
+        height: inherit;
+        width: 100%;
+        margin-bottom:5rem;
+    }
+    .billPayment-writeup button{
+        width: 90%;
+    }
+    .service-container{
+        height: inherit;
+    }
+    .service-items{
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+    .service-items .serviceItem-content{
+        width: 40% !important;
+        height: inherit !important;
+        margin: 2rem 0;
+    }
+    .easyIntegration-container{
+        flex-direction: column-reverse;
+    }
+    .helpservice-container{
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .helpservice-image, .easyIntegration-image{
+        width: 60%;
+        margin-bottom: 4rem;
+    }
+    .easyIntegration-writeup, .helpservice-writeup{
+        width: 100%;
+    }
+    .downloadstore{
+        width: 100%;
+    }
+    .downloadstore h3{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .downloadPhone-image{
+        width: 30% !important;
+    }
+    .downloadPhone-image img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .headerComponents{
+        height: inherit;
+        margin-bottom: 10px;
+    }
+    .navbar{
+        width: 100%;
+        height: 10vh;
+        padding: 10px;
+        align-items: center;
+        /* position: none; */
+    }
+    .navbar .navlogo{
+        width: 20%;
+    }
+    .navbar .nav-list li{
+        /* margin: 4rem 0; */
+        display: none;
+    }
+    .navbar .nav-list .dropdown{
+        display: block !important;
+        right: 0;
+        margin-left: 12rem;
+        font-size: 40px;
+    }
+    .navbar .nav-list.responsiveNav{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100% !important;
+        transition: 0.5s;
+        left: 0;
+        right: 0;
+        top: 0rem;
+        background-color: black;
+        padding-top: 40px !important;
+    }
+    .navbar .nav-list.responsiveNav li{
+        display: block;
+        margin: 2rem 0;
+    }
+    .navbar .nav-list.responsiveNav li.dropdown{
+        position: absolute;
+        right: 0;
+        left: 20rem;
+        top: 0;
+    }
+    .bannerDisplay{
+        padding: 10px;
+        display: flex;
+        height: inherit;
+        width: 100%;
+    }
+    .bannerDisplay-overlay{
+        width: 100%;
+        margin-top:5rem;
+        height: inherit;
+        flex-direction: column;
+    }
+    .bannerDisplay .bannerWriteup{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .bannerDisplay .bannerWriteup h1{
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+    .bannerDisplay .bannerWriteup p{
+        margin: 30px 0;
+        color:  #ABC9FD;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+    }
+    .bannerDisplay button{
+        padding:10px 30px;
+        width: 90%;
+        margin-bottom: 5rem;
+        font-size: 15px;
+    }
+    .bannerImage{
+        width: 100%;
+        height: inherit;
+    }
+    .bannerImage img{
+        width: 90%;
+        height: 400px;
+    }
+    .bannerLowerImage{
+        width: 100%;
+        background: url("../assets/map\ 1.png");
+        height: 45vh;
+        position: absolute;
+        background-size: cover;
+        top: 500px;
+    }
+    .billPayment-container{
+        height: inherit;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .billPayment-advert{
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+    .billPayment-advert img{
+        width: 90%;
+        margin: auto;
+    }
+    .billPayment-writeup{
+        width: 100%;
+        height: 40vh;
+    }
+    .billPayment-writeup h1{
+        font-size: 35px;
+    }
+    .billPayment-writeup h3{
+        font-size: 20px;
+    }
+    .billPayment-writeup p{
+        width: 90%;
+        font-size: 12px;
+    }
+    .billPayment-writeup button{
+        width: 100% !important;
+    }
+    .service-container{
+        height: inherit;
+        width: 100%;
+    }
+    .service-header p{
+        width: 95% !important;
+    }
+    .service-items{
+        flex-direction: column;
+        height: inherit;
+        padding: 2rem;
+        margin-top: 1rem;
+    }
+    .service-items .serviceItem-content{
+        width: 100% !important;
+        height: inherit !important;
+        margin: 1rem 0;
+    }
+    .desktop-tvImage{
+        display: none;
+    }
+    .serviceItem-image .mobile-tvImage{
+        display: block;
+    }
+    .section-three{
+        display: none;
+    }
+    .mobileview-only{
+        display: block;
+    }
+    .helpservice-container{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .helpservice-writeup h1{
+        font-size: 25px;
+    }
+    .download-container{
+        margin-bottom: 2rem;
+        height: inherit;
+    }
+    .downloadContainer-writeup{
+        width: 100%;
+        padding: 5px;
+        margin: 2rem 0;
+    }
+    .downloadContainer-writeup h1{
+        font-size: 20px;
+    }
+    .downloadContainer-writeup h3{
+        font-size: 20px;
+    }
+    .downloadstore{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: inherit;
+        padding: 10px;
+        align-items: center !important;
+    }
+    .downloadstore h3{
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        width: 80%;
+    }
+    .downloadstore a{
+        width: 40%;
+    }
+    .downloadstore a img{
+        width: 100%;
+    }
+    .downloadPhone-image{
+        width: 70% !important;
+        margin: auto !important;
+        height: inherit;
+        margin-top: 5rem !important;
+    }
+    .downloadPhone-image img{
+        height: 300px;
+        /* margin: auto !important; */
+    }
+    .perfectbiller-users{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+    }
+    .perfectbiller-users .perfectbiller-writeup h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #3B065E;
+    }
+    .perfectbiller-users .perfectbiller-writeup{
+        text-align: center;
+    }
+    .perfectbiller-users .perfectbiller-writeup p{
+        margin: 2rem 0;
+        text-align: left;
+    }
+    .perfectbiller-users .perfectbiller-image{
+        width: 100%;
+        text-align: center;
+    }
+    .perfectbiller-image img{
+        width: 60%;
+    }
+    .footer-components{
+        flex-direction: column;
+        height: inherit;
+        margin-top: 5rem;
+    }
+    .footer-list{
+        width: 90%;
+    }
+    /* footer{
+        display: none;
+    } */
+}

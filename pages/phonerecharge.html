@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Recharge Dash board</title>
+    <link rel="stylesheet" href="../css/phonerecharge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/fontawesome-free-5.15.4-web/css/all.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navlogo">
+                <img src="../assets/images/perfectbillerlogo e.png" alt="">
+            </div>
+
+            <ul class="dashnavlist">
+                <div class="icon-image iconImage-bg-none">
+                    <img src="../assets/images/Vector.png" alt="">
+                </div>
+                <div class="icon-image">
+                    <img src="../assets/images/Vector(3).png" alt="">
+                </div>
+                <p>Merchant ID 12080</p>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="phonerecharge-screen" id="recharge-screen">
+            
+            <aside class="phonerecharge-aside asideSelect" id="phonerecharge-aside">
+                <h3>Dashboard</h3>
+
+                <ul class="phonerecharge-list">
+                    <a href="#"> <i class="fas fa-user-circle dashboard-asideicon"></i> <span>My Accounts</span></a>
+                    <a href="#"> <i class="fas fa-money-check-alt dashboard-asideicon"></i><span>Payments </span></a>
+                    <a href="#"><i class="fas fa-tools dashboard-asideicon"></i><span>Code & Tools</span></a>
+                    <a href="#"> <i class="fas fa-chart-line dashboard-asideicon"></i><span>Transactions</span></a>
+                    <a href="#"> <i class="fas fa-address-card dashboard-asideicon"></i><span>Business Accounts</span></a>
+                    <a href="#"> <i class="fas fa-mobile dashboard-asideicon"></i><span>Mobile Top-up</span></a>
+                    <a href="#"> <i class="fas fa-cogs dashboard-asideicon"></i><span>Settings</span></a>
+                    <a href="#" class="logout"><i class="fas fa-sign-out-alt dashboard-asideicon"></i> <span>Logout</span></a>
+                </ul>
+                
+            </aside>
+    
+            <article class="phonerecharge-section" id="phonerecharge-section">
+                <div class="phonerecharge-content">
+                    <div class="dashboard-phonerecharge">
+                        <span>
+                            <a class="dashboard-link" href="dashboardscreen.html">Dashboard /</a>
+                            <a class="phonerecharge-link" href="phonerecharge.html">Phone Recharge</a>
+                        </span>
+                        <div class="dropDownContent">
+                            <div class="phoneRechargeDropdown"><i class="fas fa-bars"></i></div>
+                            <div class="backdrop"><i class="fas fa-times"></i></div>
+                        </div>
+                    </div>
+
+                    <form action="#" class="phonePurchase-form">
+                        <div class="phonerecharge-form active" id="rechargeOne">
+                            <div class="form">
+                                <label>Service Provider</label>
+                                <input type="text" list="list-select" autofocus placeholder="Select Network">
+                                <datalist id="list-select">
+                                    <option value="Mtn"></option>
+                                    <option value="Airtel"></option>
+                                    <option value="Glo"></option>
+                                    </datalist>
+                                <label>Amount</label>
+                                <input type="text" placeholder="Enter Amount">
+                                <label class="mini-amount">Minimum Amount is ₦100</label>
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="Enter Phone number">
+                                <button class="phoneSubmit" id="btnOne">Buy Airtime</button>
+                            </div>
+                        </div>
+    
+                        <div class="phonerecharge-form" id="rechargeTwo">
+                            <div class="form">
+                                <label>Service Provider</label>
+                                <input type="text" placeholder="MTN">
+                                <label>Amount</label>
+                                <input type="text" placeholder="5,0000">
+                                <label class="mini-amount">Minimum Amount is ₦100</label>
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="070364783748">
+                                <button class="phoneSubmit" id="btnTwo">Buy Airtime</button>
+                            </div>
+                        </div>
+    
+                        <div class="phonerecharge-form purchaseSuccess-section" id="rechargeSuccessful">
+                          <div class="purchasesuccess-content">
+                            <i class="fas fa-check-circle purchased-icon"></i>
+                            <span>Purchase Successful</span>
+                            <p>Your MTN airtime purchase of ₦5,000 to 070364783748 was succesful </p>
+                            <button class="phoneSubmit purchased-btn" id="btnPurchased">Ok</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/recharge.js"></script>
+</body>
+</html>

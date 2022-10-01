@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Electricity Dash board</title>
+    <link rel="stylesheet" href="../css/buyelectricitypage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-5.15.4-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navlogo">
+          <img src="../assets/images/perfectbillerlogo e.png" alt="" />
+        </div>
+
+        <ul class="dashnavlist">
+          <div class="icon-image iconImage-bg-none">
+            <img src="../assets/images/Vector.png" alt="" />
+          </div>
+          <div class="icon-image">
+            <img src="../assets/images/Vector(3).png" alt="" />
+          </div>
+          <p>Merchant ID 12080</p>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="buyelectricity-screen">
+        <aside class="buyelectricity-aside">
+          <h3>Dashboard</h3>
+
+          <ul class="buyelectricity-list">
+            <a href="#">
+              <i class="fas fa-user-circle dashboard-asideicon"></i>
+              <span>My Accounts</span></a
+            >
+            <a href="#">
+              <i class="fas fa-money-check-alt dashboard-asideicon"></i
+              ><span>Payments </span></a
+            >
+            <a href="#"
+              ><i class="fas fa-tools dashboard-asideicon"></i
+              ><span>Code & Tools</span></a
+            >
+            <a href="#">
+              <i class="fas fa-chart-line dashboard-asideicon"></i
+              ><span>Transactions</span></a
+            >
+            <a href="#">
+              <i class="fas fa-address-card dashboard-asideicon"></i
+              ><span>Business Accounts</span></a
+            >
+            <a href="#">
+              <i class="fas fa-mobile dashboard-asideicon"></i
+              ><span>Mobile Top-up</span></a
+            >
+            <a href="#">
+              <i class="fas fa-cogs dashboard-asideicon"></i
+              ><span>Settings</span></a
+            >
+            <a href="#" class="logout"
+              ><i class="fas fa-sign-out-alt dashboard-asideicon"></i>
+              <span>Logout</span></a
+            >
+          </ul>
+        </aside>
+
+        <article class="buyelectricity-section">
+          <div class="buyelectricity-content">
+            <div class="dashboard-buyelectricity">
+              <span>
+                <a class="dashboard-link" href="#">Dashboard /</a>
+                <a class="buyelectricity-link" href="#">Buy Electricity</a>
+                <div class="dropdown-menu buyElectricityIcon"><i class="fas fa-bars"></i></div>
+              </span>
+            </div>
+
+            <form action="#" class="electricityPurchase-form">
+              <div class="buyelectricity-form active" id="rechargeOne">
+                <div class="form">
+                  <label>Electricity Provider</label>
+                  <input
+                    type="text"
+                    list="select-provider"
+                    autofocus
+                    placeholder="Select Provider"
+                  />
+                  <datalist id="select-provider" class="options">
+                    <option value="AEDC"></option>
+                    <option value="PHED"></option>
+                    <option value="AEDC"></option>
+                  </datalist>
+                  <label>Package</label>
+                  <input
+                    type="text"
+                    list="select-package"
+                    autofocus
+                    placeholder="Select Package"
+                  />
+                  <datalist id="select-package" class="options">
+                    <option value="Prepaid"></option>
+                    <option value="PostPaid"></option>
+                    <option value="Prepaid"></option>
+                  </datalist>
+                  <label>Meter Number</label>
+                  <input type="text" placeholder="Enter Meter Number" />
+                  <label>Amount</label>
+                  <input type="text" placeholder="Enter Amount" />
+                  <label class="mini-amount">Minimum Amount is ₦100</label>
+                  <button class="buySubmit" id="btnOne">Purchase</button>
+
+                </div>
+              </div>
+
+              <div class="buyelectricity-form" id="rechargeTwo">
+                <div class="form">
+                  <label>Electricity Provider</label>
+                  <input type="text" placeholder="AEDC" />
+                  <label>Package</label>
+                  <input type="text" placeholder="Prepaid" />
+                  <label>Phone Number</label>
+                  <input type="text" placeholder="411000765442" />
+                  <label>Amount</label>
+                  <input type="text" placeholder="15,790" />
+                  <label class="mini-amount">Minimum Amount is ₦2,000</label>
+                  <button class="buySubmit" id="btnTwo">Purchase</button>
+
+                </div>
+              </div>
+              <div
+                class="buyelectricity-form purchaseSuccess-section"
+                id="rechargeSuccessful"
+              >
+                <div class="purchasesuccess-content">
+                  <i class="fas fa-check-circle purchased-icon"></i>
+                  <span>Purchase Successful</span>
+                  <p>Your PHED subscription of ₦15,790 was succesful</p>
+                  <button class="buySubmit purchased-btn" id="btnPurchased">
+                    OK
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="../css/fontawesome-free-5.15.4-web/js/all.js"></script>
+    <script src="../js/recharge.js"></script>
+  </body>
+</html>

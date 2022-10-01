@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: #EDE9FA;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+}
+.navlogo{
+    width: 10%;
+    color: #3B065E;
+    font-size: 20px;
+}
+.navlogo img{
+    width: 100%;
+}
+.dashnavlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 80%;
+    align-items: center;
+}
+.icon-image{
+    margin: 0 20px;
+    /* background-color: #EDE9FA; */
+    border-radius: 15px;
+    /* width: 10%; */
+    text-align: center;
+    padding: 5px 0;
+    /* height: 35px; */
+}
+.iconImage-bg-none{
+    background-color:white;
+}
+.icon-image img{
+    width: 100%;
+    /* height: 20px; */
+}
+.dashboard-screen{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+}
+.dashboard-section{
+    height: inherit;
+    /* width: 20%; */
+    background: #3B065E;
+    padding: 25px;
+    /* text-align: center; */
+    color: white;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 15%;
+}
+.dashboard-section h3{
+    /* margin-left: 5rem; */
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.dashboard-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: right;
+    /* margin: auto; */
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 5rem;
+}
+.dashboard-list a{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    /* font-weight: bold; */
+    margin: 0.7rem 0;
+    padding: 10px;
+}
+.dashboard-list a:hover{
+    background-color: white;
+    color: #3B065E;
+}
+.dashboard-asideicon{
+    margin-right: 2rem;
+    font-size: 15px;
+    /* background-color: white;
+    color: #3B065E; */
+}
+.dashboard-section .logout{
+    text-decoration: none;
+    color: white;
+    /* margin-left: 5rem; */
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 15px;
+    /* font-weight: bold; */
+}
+.dashboard-section .logout:hover{
+    background-color: white;
+    color: #3B065E;
+}
+.dashboard-diffComp{
+    /* width: 70%; */
+    height: inherit;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 75%;
+    /* background-color: red; */
+}
+.phoneElect-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 95%;
+    margin: auto;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.phone-elect{
+    /* width: 55%; */
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    justify-content: space-around;
+    align-items: center;
+}
+.dash-content{
+    width: 30%;
+    height: inherit ;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px white;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.dash-image{
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.image-phone{
+    background-color:#5004FB80;
+}
+.image-electricity{
+    background-color: #FC727380;
+}
+.image-tv{
+    background-color: #4CD68B80;
+}
+.image-pos{
+    background: #E758AE80;
+}
+.image-fund{
+    background: #2D9AB280;
+}
+.image-business{
+    background: #EC913D80;
+
+}
+.dash-image img{
+    height: 20px;
+    width: 50%;
+    margin-top: 5px;
+}
+.searchAndWallet{
+    /* width: 45%; */
+    height: inherit;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 100px;
+    /* background-color: black; */
+    text-align: center;
+    align-items: center;
+    /* padding: 30px; */
+    justify-content: center;
+    padding: 20px 0;
+    
+}
+/* .searchAndWallet input{
+    width: 90%;
+    height: 43px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    padding-left:4rem;
+    margin: 15px 0;
+    font-size: 16px;
+    text-align: left;
+} */
+/* .searchicon{
+    position: absolute;
+    left: 68rem;
+    top: 8.7rem;
+    margin-right: 20px;
+} */
+.searchAndWallet .wallet{
+    width: 90%;
+    height: inherit;
+    margin: auto;
+    background-color: white;
+    padding: 47px;
+}
+.wallet strong{
+    font-size: 35px;
+    color: #555356;
+}
+.walletBalance-fund{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.addfund{
+    display: flex;
+    flex-wrap: wrap;
+    background: #CCFFE34D;
+    height: 5vh;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    color: #54D890;
+}
+.addfund img{
+    width: 5%;
+    height: 10px;
+}
+.chart-container{
+    width: 95%;
+    height:424px;
+    background-color: white;
+    color: black;
+    margin: auto;
+}
+
+.accountStatement-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+}
+.accountStatement-container table{
+    width: 100%;
+    margin-top: 30px;
+}
+.accountStatement-container table tr{
+    height: 10vh;
+    width: 100%;
+    /* background-color: white; */
+}
+/* .accountStatement-container table tr th, td{
+    border-style: none;
+} */
+.tr-ash{
+    background-color: #ECEFF3;
+}
+.tr-white{
+    background-color: white;
+}
+.dropDownContent{
+    display: none;
+}
+@media screen and (max-width: 1220px) {
+    .dashboard-section{
+        position: absolute;
+        left: -140%;
+        width: 30%;
+    }
+    .addfund{
+        height: inherit;
+        width: 100%;
+    }
+    .wallet strong{
+        font-size: 22px;
+    }
+    .dropDownContent{
+        display: flex;
+        position: absolute;
+        left: 59rem;
+        top: 5rem;
+    }
+    .dashBackdrop{
+        display: none;
+    }
+    .activate{
+        left: 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .dashboard-diffComp{
+        width: 70%; 
+        height: 100vh;
+    }
+    .dashboard-section{
+        width: 40%; 
+        padding: 60px 0;
+        position: absolute;
+        left: -100%;
+    }
+    .addfund{
+        width: 50%;
+    }
+    .dashboard-list a span{
+        /* display: none; */
+    }
+    .dash-content{
+        padding: 10px;
+    }
+    .searchAndWallet .wallet{
+        width: 96% !important;
+        margin-top: 2rem;
+    }
+    .searchAndWallet .wallet strong{
+        font-size: 19px;
+    }
+    .phone-elect{
+        flex-basis: 600px;
+    }
+    .dropDownContent{
+        display: flex;
+        position: absolute;
+        left: 42rem;
+        top: 5rem;
+    }
+    .dashBackdrop{
+        display: none;
+    }
+    .activate{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .dash-content{
+        padding: 3px;
+        font-size: 10px;
+    }
+    .searchAndWallet .wallet{
+        margin-top: 2rem;
+        width: 97%;
+    }
+    .dropDownContent{
+        display: flex;
+        position: absolute;
+        left: 20rem;
+        top: 5rem;
+    }
+    .dashDropdown{
+        margin-right: -1rem;
+    }
+    .dashBackdrop{
+        display: none;
+    }
+    .dashboard-section{
+        width: 60%; 
+        padding: 60px 0;
+        position: absolute;
+        left: -100%;
+    }
+    .activate{
+        left: 0;
+    }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund and Withdraw</title>
+    <link rel="stylesheet" href="../css/fundandwithdraw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/fontawesome-free-5.15.4-web/css/all.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navlogo">
+                <img src="../assets/images/perfectbillerlogo e.png" alt="">
+            </div>
+
+            <ul class="dashnavlist">
+                <div class="icon-image iconImage-bg-none">
+                    <img src="../assets/images/Vector.png" alt="">
+                </div>
+                <div class="icon-image">
+                    <img src="../assets/images/Vector(3).png" alt="">
+                </div>
+                <p>Merchant ID 12080</p>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fundAndWithdraw-screen">
+            <aside class="fundAndWithdrawal-aside">
+                <h3>Dashboard</h3>
+
+                <ul class="fundAndWithdrawal-list">
+                    <a href="#"> <i class="fas fa-user-circle dashboard-asideicon"></i> <span>My Accounts</span></a>
+                    <a href="#"> <i class="fas fa-money-check-alt dashboard-asideicon"></i><span>Payments </span></a>
+                    <a href="#"><i class="fas fa-tools dashboard-asideicon"></i><span>Code & Tools</span></a>
+                    <a href="#"> <i class="fas fa-chart-line dashboard-asideicon"></i><span>Transactions</span></a>
+                    <a href="#"> <i class="fas fa-address-card dashboard-asideicon"></i><span>Business Accounts</span></a>
+                    <a href="#"> <i class="fas fa-mobile dashboard-asideicon"></i><span>Mobile Top-up</span></a>
+                    <a href="#"> <i class="fas fa-cogs dashboard-asideicon"></i><span>Settings</span></a>
+                    <a href="#" class="logout"><i class="fas fa-sign-out-alt dashboard-asideicon"></i> <span>Logout</span></a>
+                </ul>
+                
+            </aside>
+    
+            <article class="phonerecharge-section fundAndWithdraw-section">
+                <div class="phonerecharge-content fundAndWithdraw-content">
+                    <div class="dashboard-fundAndWithdrawal">
+                        <span>
+                            <a class="dashboard-link" href="dashboardscreen.html">Dashboard /</a>
+                            <a class="phonerecharge-link fund-link" href="fundandwithdraw.html">Fund Account</a>
+                        </span>
+                        <div class="dropDownContent">
+                            <div class="fundDropdown"><i class="fas fa-bars"></i></div>
+                            <div class="fundBackdrop"><i class="fas fa-times"></i></div>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="fundAndWithdraw-links">
+                        <a href="#" class="selecter tab isactive" id="fundWallet-btn" onclick="toogleTabs('Fund wallet','fundWallet')">Fund wallet</a>
+                        <a href="#" class="tab"id="bankWithdraw-btn" onclick="toogleTabs('Bank Withdrawal','bankWithdraw')">Bank Withdrawal</a>
+                        <a href="#" class="tab" id="walletTransfer-btn" onclick="toogleTabs('Wallet Transfer','walletTransfer')">Wallet Transfer</a>
+                    </div>
+                    
+                    <form action="#" class="phonePurchase-form fundWallet tab-content show-content" id="fundWallet">
+                        <div class="fundWallet-section active rechargeOne" id="tab1-section1">
+                            <div class="fundPerfectBiller">
+
+                                <h3>Fund PerfectBiller Wallet</h3>
+
+                                <div class="walletBalance">
+                                    <h4>Wallet Balance</h4>
+                                    <strong>7,000,087.30</strong>
+                                </div>
+                            </div>
+
+                            <div class="fundPerfectBiller Wallet-form">
+                                <div class="perfectBiller-formHeader">
+                                    <h3>Enter the amount you would want to fund.</h3>
+                                </div>
+
+                                <div  class="walletForm">
+                                   <div class="select-wallet">
+                                        <label class="selectWallet-text">Select Wallet:</label>
+                                        <span>
+                                            <input type="radio" name="" id="">
+                                            <label>NGN</label>
+                                        </span>
+                                        
+                                        <span>
+                                            <input type="radio" name="" id="">
+                                            <label>USD</label>
+                                        </span>
+                                   </div>
+                                    <div class="wallet-amountToPay">
+                                        <label for="">Amount to fund (e.g 5000)</label>
+                                        <input type="text" name="" id="" placeholder="enter amount here">
+                                    </div>
+                                   <div class="wallet-amountToPay">
+                                        <label for="">Amount to pay:</label>
+                                        <p>0.00</p>
+                                   </div>
+                                    <button class="fund-wallet-next continue-fund">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="fundWallet-section rechargeTwo" id="tab1-section2">
+                            <div class="wallet-optionSelect">
+                                <h4>Select an Option</h4>
+                                <button>Fund with Card</button>
+                                <button>Fund with Bank Transfer</button>
+                                <button class="phoneSubmit btnTwo selectFund" id="btnTwo">Continue</button>
+                            </div>
+                        </div>
+
+                        <div class="fundWallet-section" id="tab1-section3">
+                            <div class="fundWallet-cardDetail">
+                                <h3>Enter your card details to fund account</h3>
+
+                                <div class="cardNumber">
+                                    <label for="">Card number</label>
+                                    <input type="text" placeholder="0000   0000   0000   0000">
+                                </div>
+
+                                <div class="cardName">
+                                    <label for="">Cardholder name</label>
+                                    <input type="text" placeholder="ex. John Paul">
+                                </div>
+
+                                <div class="cardExpiry">
+                                    <span class="expiry">
+                                        <label for="">Expiry Date</label>
+                                        <input type="text" placeholder="Epiry date  MM/YY">
+                                    </span>
+
+                                    <span class="cvv">
+                                        <label for="">CVV</label>
+                                        <input type="text" placeholder="3 digits">
+                                    </span>
+                                </div>
+
+                                <div class="saveCard">
+                                    <input type="checkbox">
+                                    <label for="">Save this card for  future transactions</label>
+                                </div>
+
+                                <button class="fundWallet-button">Continue</button>
+                            </div>
+
+                        </div>
+    
+                        <div class="fundWallet-section purchaseSuccess-section rechargeSuccessful" id="tab1-section4">
+                          <div class="purchasesuccess-content">
+                            <i class="fas fa-check-circle purchased-icon"></i>
+                            <span>Successful</span>
+                            <p>Your wallet has been funded successfully! </p>
+                            <button class="phoneSubmit purchased-btn btnPurchased confirmFund" id="btnPurchased">Ok</button>
+                          </div>
+                        </div>
+                    </form>
+
+                    <form action="#" class="bankWithdraw tab-content" id="bankWithdraw">
+                        <div class="phonerecharge-form bankWithdraw-section active bankWithdrawOne" id="tab2-section1">
+                            <h4 class="withdraw-header">Withdraw</h4>
+                            <div class="message">
+                                <h4>Enter the amount you would want to withdraw</h4>
+                                <p>
+                                    Provide Bank details for a one time transaction, It will not be saved as a permanent beneficiary in 
+                                    your PERFECT BILLER account. If you wish to add a permanent beneficiary, click on the save box below.
+                                </p>
+                            </div>
+                            
+                            <div class="bankWithdrawal-form">
+                                <div class="select-wallet">
+                                    <label class="selectWallet-text">Select Wallet:</label>
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>NGN</label>
+                                    </span>
+                                    
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>USD</label>
+                                    </span>
+                                </div>
+
+                                <label>Select Bank</label>
+                                <input type="text" list="list-select" autofocus placeholder="Select bank">
+                                <datalist id="list-select">
+                                    <option value="GT Bank"></option>
+                                    <option value="UBA"></option>
+                                    <option value="FirstBank"></option>
+                                    </datalist>
+                                <label>Beneficiary Account number</label>
+                                <input type="text" placeholder="enter account number">
+                                <label>Beneficiary Account name</label>
+                                <input type="number" placeholder="enter account name">
+                                <label>Amount to withdraw (e.g 5000)</label>
+                                <input type="number" placeholder="enter amount here">
+                                <div class="saveCard">
+                                    <input type="checkbox">
+                                    <label for="">Save this card for  future transactions</label>
+                                </div>
+                                <button class="phoneSubmit btnOne" id="tabTwoBtnOne">Continue</button>
+                            </div>
+                        </div>
+    
+                        <div class="phonerecharge-form bankWithdraw-section bankWithdrawTwo" id="tab2-section2">
+                            <h4 class="withdraw-header">Withdraw</h4>
+                            <div class="message">
+                                <h4>Enter the amount you would want to withdraw</h4>
+                                <p>
+                                    Provide Bank details for a one time transaction, It will not be saved as a permanent beneficiary in 
+                                    your PERFECT BILLER account. If you wish to add a permanent beneficiary, click on the save box below.
+                                </p>
+                            </div>
+                            
+                            <div class="bankWithdrawal-form">
+                                <div class="select-wallet">
+                                    <label class="selectWallet-text">Select Wallet:</label>
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>NGN</label>
+                                    </span>
+                                    
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>USD</label>
+                                    </span>
+                                </div>
+
+                                <label>Select Bank</label>
+                                <input type="text" list="list-select" autofocus placeholder="Select bank">
+                                <datalist id="list-select">
+                                    <option value="GT Bank"></option>
+                                    <option value="UBA"></option>
+                                    <option value="FirstBank"></option>
+                                    </datalist>
+                                <label>Beneficiary Account number</label>
+                                <input type="text" placeholder="enter account number">
+                                <label>Beneficiary Account name</label>
+                                <input type="number" placeholder="enter account name">
+                                <label>Amount to withdraw (e.g 5000)</label>
+                                <input type="number" placeholder="enter amount here">
+                                <div class="saveCard">
+                                    <input type="checkbox">
+                                    <label for="">Save this card for  future transactions</label>
+                                </div>
+                                <div class="saveBankCard">
+                                    <span class="savaCard-text">
+                                        <p class="bankCardName">JAMES OKAFOR ALAYE</p>
+                                        <p class="bankCardNumber">GT Bank - 0119873654</p>
+                                    </span>
+                                    <i class="far fa-trash-alt"></i>
+                                </div>
+                                <button class="phoneSubmit btnOne" id="tabTwoProceedBtn">Proceed</button>
+                            </div>
+                        </div>
+    
+                        <!-- <div class="phonerecharge-form purchaseSuccess-section bankWithdrawSuccessful" id="tab2-section3">
+                          <div class="purchasesuccess-content">
+                            <i class="fas fa-check-circle purchased-icon"></i>
+                            <span>Purchase Successful</span>
+                            <p>Your MTN airtime purchase of ₦5,000 to 070364783748 was succesful </p>
+                            <button class="phoneSubmit purchased-btn btnPurchased" id="btnPurchased">Ok</button>
+                          </div>
+                        </div> -->
+                    </form>
+
+                    <form action="#" class="walletTransfer tab-content" id="walletTransfer">
+                        <div class="phonerecharge-form bankWithdraw-section active bankWithdrawOne" id="">
+                            <h4 class="withdraw-header walletTransfer-header">Send to PerfectBiller account</h4>
+                            
+                            <div class="bankWithdrawal-form walletTransfer-form">
+                                <div class="select-wallet">
+                                    <label class="selectWallet-text">Select Wallet:</label>
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>NGN</label>
+                                    </span>
+                                    
+                                    <span>
+                                        <input type="radio" name="" id="">
+                                        <label>USD</label>
+                                    </span>
+                                </div>
+
+                                <label>Select Bank</label>
+                                <input type="text" list="list-select" autofocus placeholder="Select bank">
+                                <datalist id="list-select">
+                                    <option value="GT Bank"></option>
+                                    <option value="UBA"></option>
+                                    <option value="FirstBank"></option>
+                                    </datalist>
+                                <label>Beneficiary Account number</label>
+                                <input type="text" placeholder="enter account number">
+                                <div class="saveCard">
+                                    <input type="checkbox">
+                                    <label for="">Save this card for  future transactions</label>
+                                </div>
+                                <button class="phoneSubmit" id="">Continue</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- <script src="../js/recharge.js"></script> -->
+    <script src="../js/fundandwithdrawal.js"></script>
+    
+</body>
+</html>

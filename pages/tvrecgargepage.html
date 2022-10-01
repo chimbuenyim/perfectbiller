@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Recharge Dash board</title>
+    <link rel="stylesheet" href="../css/tvrechargepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-5.15.4-web/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navlogo">
+          <img src="../assets/images/perfectbillerlogo e.png" alt="" />
+        </div>
+
+        <ul class="dashnavlist">
+          <div class="icon-image iconImage-bg-none">
+            <img src="../assets/images/Vector.png" alt="" />
+          </div>
+          <div class="icon-image">
+            <img src="../assets/images/Vector(3).png" alt="" />
+          </div>
+          <p>Merchant ID 12080</p>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tvrecharge-screen" id="rechargerScreen">
+        <aside class="tvrecharge-aside asideContent" id="asideElement">
+          <h3>Dashboard</h3>
+
+          <ul class="tvrecharge-list">
+            <a href="#">
+              <i class="fas fa-user-circle dashboard-asideicon"></i>
+              <span>My Accounts</span></a
+            >
+            <a href="#">
+              <i class="fas fa-money-check-alt dashboard-asideicon"></i
+              ><span>Payments </span></a
+            >
+            <a href="#"
+              ><i class="fas fa-tools dashboard-asideicon"></i
+              ><span>Code & Tools</span></a
+            >
+            <a href="#">
+              <i class="fas fa-chart-line dashboard-asideicon"></i
+              ><span>Transactions</span></a
+            >
+            <a href="#">
+              <i class="fas fa-address-card dashboard-asideicon"></i
+              ><span>Business Accounts</span></a
+            >
+            <a href="#">
+              <i class="fas fa-mobile dashboard-asideicon"></i
+              ><span>Mobile Top-up</span></a
+            >
+            <a href="#">
+              <i class="fas fa-cogs dashboard-asideicon"></i
+              ><span>Settings</span></a
+            >
+            <a href="#" class="logout"
+              ><i class="fas fa-sign-out-alt dashboard-asideicon"></i>
+              <span>Logout</span></a
+            >
+          </ul>
+        </aside>
+        <!-- <div class="backdrop"></div>  -->
+        <article class="tvrecharge-section">
+          <div class="tvrecharge-content">
+            <div class="dashboard-tvrecharge">
+              <span>
+                <a class="dashboard-link" href="dashboardscreen.html">Dashboard /</a>
+                <a class="tvrecharge-link" href="tvrecgargepage.html">TV Recharge</a>
+              </span>
+              <div class="dropDownContent">
+                <div class="dropdown-menu"><i class="fas fa-bars"></i></div>
+                <div class="backdrop"><i class="fas fa-times"></i></div>
+              </div>
+            </div>
+
+            <form action="#" class="tvPurchase-form">
+              <div class="tvrecharge-form active" id="rechargeOne">
+                <div class="form">
+                  <label>Service Provider</label>
+                  <input
+                    type="text"
+                    list="select-provider"
+                    autofocus
+                    placeholder="Select Provider"
+                  />
+                  <datalist id="select-provider" class="options">
+                    <option value="DSTV"></option>
+                    <option value="GOTV"></option>
+                    <option value="Star Times"></option>
+                  </datalist>
+                  <label>Service Package</label>
+                  <input
+                    type="text"
+                    list="select-package"
+                    autofocus
+                    placeholder="Select Package"
+                  />
+                  <datalist id="select-package" class="options">
+                    <option value="Compact Plus"></option>
+                    <option value="Compact regular"></option>
+                    <option value="Compact"></option>
+                  </datalist>
+                  <label>Amount</label>
+                  <input type="text" placeholder="Enter Amount" />
+                  <label class="mini-amount">Minimum Amount is ₦2,000</label>
+                  <label>Smart Card Number</label>
+                  <input type="text" placeholder="Enter Smart Card Number" />
+                  <button class="tvSubmit" id="btnOne">Purchase</button>
+                </div>
+              </div>
+
+              <div class="tvrecharge-form" id="rechargeTwo">
+                <div class="form">
+                  <label>Service Provider</label>
+                  <input type="text" placeholder="DSTV" />
+                  <label>Service Package</label>
+                  <input type="text" placeholder="Compact Plus" />
+                  <label>Amount</label>
+                  <input type="text" placeholder="20,000" />
+                  <label class="mini-amount">Minimum Amount is ₦2,000</label>
+                  <label>Phone Number</label>
+                  <input type="text" placeholder="22331114578" />
+                  <button class="tvSubmit" id="btnTwo">Purchase</button>
+                </div>
+              </div>
+
+              <div
+                class="tvrecharge-form purchaseSuccess-section"
+                id="rechargeSuccessful"
+              >
+                <div class="purchasesuccess-content">
+                  <i class="fas fa-check-circle purchased-icon"></i>
+                  <span>Purchase Successful</span>
+                  <p>Your DSTV subscription of ₦20,000 was succesful</p>
+                  <button class="tvSubmit purchased-btn" id="btnPurchased">
+                    OK
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="../css/fontawesome-free-5.15.4-web/js/all.js"></script>
+    <script src="../js/tvrecharge.js"></script>
+  </body>
+</html>

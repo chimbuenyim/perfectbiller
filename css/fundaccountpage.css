@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+.navlogo{
+    width: 10%;
+}
+.navlogo img{
+    width: 100%;
+}
+.dashnavlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 80%;
+    align-items: center;
+}
+.dashnavlist p{
+    font-size: 14px;
+}
+.icon-image{
+    margin: 0 20px;
+    background-color: #EDE9FA;
+    border-radius: 15px;
+    text-align: center;
+    height: 25px;
+}
+.iconImage-bg-none{
+    background-color:white;
+}
+.icon-image img{
+    width: 100%;
+    height: 20px;
+}
+.buyelectricity-screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+.buyelectricity-aside{
+    background-color: #3B065E;
+    height: auto;
+    padding: 30px 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+.buyelectricity-aside h3{
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: .7rem;
+}
+.buyelectricity-list{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 1rem;
+    height: inherit;
+}
+.buyelectricity-list a{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    margin: auto;
+    padding-left: 1.3rem;
+    margin-top: 2rem;
+}
+.buyelectricity-list .logout{
+    margin-top: 6rem !important;
+}
+.dashboard-asideicon{
+    margin-right: 1.1rem;
+    font-size: 17px;
+}
+.fa-user-circle{
+    margin-left: 3px;
+    margin-right: .9rem;
+}
+.fa-tools{
+    margin-right: 1.2rem;
+}
+.fa-mobile{
+margin-left: 5px;
+margin-right: 1.2rem;
+}
+.fa-cogs{
+    margin-right: .9rem;
+}
+.buyelectricity-section{
+    padding: 10px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+.buyelectricity-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+}
+.dashboard-buyelectricity{
+    width: 100%;
+}
+.dashboard-buyelectricity span .dashboard-link{
+    text-decoration: none;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+.dashboard-buyelectricity span .buyelectricity-link{
+    text-decoration: none;
+    font-size: 12px;
+}
+.electricityPurchase-form{
+    width: 95%;
+}
+.buyelectricity-form{
+    width: 85%;
+    align-content: center;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    display: none;
+}
+.buyelectricity-form.active{
+    display: block;
+}
+.buyelectricity-form .form{
+    display: flex;
+    height: inherit;
+    width:100% ;
+    padding: 2.5rem 6rem;
+    flex-direction: column;
+    margin: auto;
+}
+.buyelectricity-form .form label{
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 3px;
+    color: #242729;
+}
+.buyelectricity-form .form label.mini-amount{
+    font-weight: lighter;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 1.2rem;
+}
+.buyelectricity-form .form input{
+    /* width: 100%; */
+    padding: 15px 10px;
+    margin-bottom: 1.2rem;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+}
+.buySubmit{
+    background-color: #3B065E;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+}
+.purchasesuccess-content{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Average Sans', sans-serif;
+}
+.purchased-icon{
+    color: green;
+    font-size: 75px;
+    /* margin: 4rem 0; */
+}
+.purchasesuccess-content span{
+    font-size: 22px;
+}
+.purchasesuccess-content p{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 16px;
+}
+.purchased-btn{
+    padding: 12px;
+    width: 40%;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+@media screen and (max-width:1024px){
+    .buyelectricity-list span{
+        display: none;
+    }
+    .dashboard-asideicon{
+        font-size: 35px;
+        margin-left: 2rem;
+    }
+    .buyelectricity-form{
+        width: 90%;
+    }
+    .buyelectricity-form form{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:700px){
+    .buyelectricity-aside{
+        flex-basis: 100%;
+    }
+    .buyelectricity-list a{
+        display: flex;
+    }
+    .buyelectricity-list span{
+        display: block;
+    }
+    .dashboard-asideicon{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .buyelectricity-section{
+        padding: 5px;
+    }
+    .buyelectricity-content{
+        width: 100%;
+    }
+    .dashboard-buyelectricity span .dashboard-link{
+        font-size: 15px;
+    }
+    .dashboard-buyelectricity span .buyelectricity-link{
+        font-size: 15px;
+    }
+    .buyPurchase-form{
+        width: 100%;
+    }
+    .buyelectricity-form .form{
+        padding: 3rem 1rem;
+    }
+    .buySubmit{
+        padding: 8px 0;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .purchasesuccess-content span{
+        font-size: 18px;
+    }
+    .purchasesuccess-content p{
+        font-size: 12px;
+    }
+    .purchased-icon{
+        font-size: 35px;
+    }
+    .purchased-btn{
+        padding: 8px;
+    }
+    .display{
+        /* display: block; */
+        left: 0;
+
+    }
+}

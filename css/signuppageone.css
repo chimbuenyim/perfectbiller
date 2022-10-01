@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+#signup-section {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  height: 100vh;
+}
+.signup-form-wrapper {
+  padding: 0px 12rem;
+  padding-top: 20px;
+  /* display: flex; */
+}
+.signup-form-wrapper .logo {
+  width: 120px;
+  height: 53.5px;
+}
+.signup-form-wrapper .logo img {
+  width: 100%;
+}
+.signup-form {
+  align-self: center;
+  /* width: 60%; */
+  padding: 59.5px 0;
+}
+.signup-form h2 {
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: rgb(49, 48, 48);
+}
+.status {
+  width: 27vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.status-number-one {
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #3b065e;
+  margin: 5px;
+}
+.status-number-two {
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(230, 227, 227);
+  margin: 5px;
+}
+.status-number-one p {
+  text-align: center;
+  color: #3b065e;
+  font-weight: 600;
+  font-size: 9px;
+  cursor: default;
+}
+.status-number-two p {
+  text-align: center;
+  color: rgb(230, 227, 227);
+  font-weight: 600;
+  font-size: 9px;
+  cursor: default;
+}
+.status-bar-purple {
+  width: 15vw;
+  height: 3px;
+  background-color: #3b065e;
+}
+.status-bar-white {
+  width: 15vw;
+  height: 3px;
+  background-color: rgb(230, 227, 227);
+}
+.signup-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.signup-details label {
+  padding: 5px 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(49, 48, 48);
+}
+.signup-details input {
+  width: 25vw;
+  font-size: 15px;
+  border: 1px solid rgb(180, 179, 179);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+}
+button {
+  border: none;
+  width: 27vw;
+  border-radius: 3px;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  margin: 26px 0;
+  margin-bottom: 10px;
+  background-color: #3b065e;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4f1277;
+}
+.signup-link {
+  width: 27vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding-bottom: 10px; */
+  font-size: 14px;
+}
+.signup-link a {
+  padding-left: 3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.signup-link a:hover {
+  text-decoration: underline;
+  color: #2c0247f6;
+}
+
+/* ************ Perfect biller banner (right side) **************/
+.slider-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  transition-property: all;
+  transition: left .4s;
+  -webkit-transition: left .4s;
+  -moz-transition: left .4s;
+  -o-transition: left .4s;
+}
+.perfectbiller-banner {
+  width: 100%;
+  background-color: #3b065e;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.logo-text {
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.perfectbiller-banner .logo {
+  width: 18vw;
+}
+.perfectbiller-banner p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.966);
+}
+.perfectbiller-banner .image3{
+  width: 38vw;
+}
+.perfectbiller-banner .image2{
+  width:35vw;
+}
+.perfectbiller-banner .image4{
+  width: 35vw;
+}
+.perfectbiller-banner .image5{
+  width: 46vw;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+.button-container li{
+  list-style-type: none;
+}
+.button-container a {
+padding:4px;
+border-radius: 50%;
+}
+.slider-button{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #d3a4f3ec;
+}
+.slider-button:hover{
+  background-color: #fff;
+}
+.button-container a::after{
+  background-color: #fff;
+}
+#slider-image1:target~ .image-container{
+  left: 0;
+}
+#slider-image2:target~ .image-container{
+  left: -35vw;
+}
+#slider-image3:target~ .image-container{
+  left: -70vw;
+}
+#slider-image4:target~ .image-container{
+  left: -105vw;
+}
+#slider-image5:target~ .image-container{
+  left: -140vw;
+}
+@media (max-width:550px){
+  .signup-form-wrapper{
+    display: grid;   
+    padding: 0px;
+    padding-left: 30px;
+    width: 40%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    /* justify-items: center; */
+  }
+  .status{
+    width: 76vw;
+  }
+  .status-bar-purple{
+    width: 35vw;
+  }
+  .status-bar-white{
+    width: 35vw;
+  }
+  .signup-form{
+    padding: 10px;
+    height: 80vh;
+  }
+  .signup-form h2 {
+    text-align: center;
+  }
+  .signup-details input {
+    width: 70vw;
+    font-size: 13px;
+    padding: 8px;
+    margin-bottom: 3px;
+  }
+  button {
+    width: 76vw;
+    padding: 8px 0;
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+  .signup-link{
+    padding-left: 0;
+  }
+  .slider-container{
+    display: none;
+  }
+}
+@media (min-width:551px) and (max-width:850px){
+  #signup-section{
+    /* grid-template-columns: 60% 40%; */
+    height: 100vh;
+  }
+  .signup-form-wrapper .logo{
+    padding-top: 20px;
+  }
+  .signup-form-wrapper {
+    display: grid;
+    padding: 40px 4rem;
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+  }
+  .status{
+    width: 76vw;
+  }
+  .status-bar-purple{
+    width: 19vw;
+  }
+  .status-bar-white{
+    width: 19vw;
+  }
+  .signup-form {
+    width: 60%;
+    padding: 40px 0;
+  }
+  .signup-details input {
+    width: 40vw;
+    font-size: 14px;
+    padding: 9px;
+  }
+  button {
+    width: 43vw;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+  .signup-link {
+    width: 100%;
+    /* padding-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .perfectbiller-banner p{
+    font-size: 1.7vw;
+    font-weight: 600;
+  }
+}
+@media (min-width:851px) and (max-width:1220px){
+  #signup-section{
+    /* grid-template-columns: 60% 40%; */
+    height: 100vh;
+  }
+  .signup-form-wrapper {
+    display: grid;
+    padding: 40px 0rem;
+    justify-self: center;
+  }
+  .status{
+    width: 41vw;
+  }
+  .status-bar-purple{
+    width: 22vw;
+  }
+  .status-bar-white{
+    width:22vw;
+  }
+  .signup-form {
+    width: 70%;
+    padding: 40px 0;
+  }
+  .signup-details input {
+    width: 40vw; 
+    max-width: 400px;
+    font-size: 14px;
+    padding: 9px;
+  }
+  button {
+    width: 42vw;
+    max-width: 420px;
+    border-radius: 4px;
+    margin: 15px 0;
+  }
+  .signup-link {
+    /* padding-left: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+}

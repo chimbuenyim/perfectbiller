@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="../css/dashboardscreen.css"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navlogo">
+                <img src="../assets/images/perfectbillerlogo e.png" alt="">
+            </div>
+
+            <ul class="dashnavlist">
+                <div class="icon-image iconImage-bg-none">
+                    <img src="../assets/images/Vector.png" alt="">
+                </div>
+                <div class="icon-image">
+                    <img src="../assets/images/Vector(3).png" alt="">
+                </div>
+                <p>Merchant ID 12080</p>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-screen">
+            <aside class="dashboard-section">
+                <h3>Dashboard</h3>
+
+                <ul class="dashboard-list">
+                    <a href="#"> <i class="fas fa-user-circle dashboard-asideicon"></i> <span>My Accounts</span></a>
+                    <a href="#"> <i class="fas fa-money-check-alt dashboard-asideicon"></i><span>Payments </span></a>
+                    <a href="#"><i class="fas fa-tools dashboard-asideicon"></i><span>Code & Tools</span></a>
+                    <a href="#"> <i class="fas fa-chart-line dashboard-asideicon"></i><span>Transactions</span></a>
+                    <a href="#"> <i class="fas fa-address-card dashboard-asideicon"></i><span>Business Accounts</span></a>
+                    <a href="#"> <i class="fas fa-mobile dashboard-asideicon"></i><span>Mobile Top-up</span></a>
+                    <a href="#"> <i class="fas fa-cogs dashboard-asideicon"></i><span>Settings</span></a>
+                </ul>
+                
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt dashboard-asideicon"></i> <span>Logout</span></a>
+
+            </aside>
+    
+            <article class="dashboard-diffComp">
+                <div class="dropDownContent">
+                    <div class="dashDropdown"><i class="fas fa-bars"></i></div>
+                    <div class="dashBackdrop"><i class="fas fa-times"></i></div>
+                </div>
+                <section class="phone-electricity">
+                    <div class="phoneElect-container">
+                        <div class="phone-elect">
+                            <a href="phonerecharge.html" class="dash-content">
+                                <div class="dash-image image-phone">
+                                    <img src="../assets/images/phone.png" alt="">
+                                </div>
+                                <p>Phone Recharge</p>
+                            </a>
+    
+                            <a href="buyelectricitypage.html" class="dash-content">
+                                <div class="dash-image image-electricity">
+                                    <img src="../assets/images/electricity.png" alt="">
+                                </div>
+                                <p>Buy Electricity</p>
+                            </a>
+    
+                            <a href="tvrecgargepage.html" class="dash-content">
+                                <div class="dash-image image-tv">
+                                    <img src="../assets/images/tv.png" alt="">
+                                </div>
+                                <p>Tv Recharge</p>
+                            </a>
+    
+                            <a href="#" class="dash-content">
+                                <div class="dash-image image-pos">
+                                    <img src="../assets/images/pos.png" alt="">
+                                </div>
+                                <p>Virtual POS</p>
+                            </a>
+    
+                            <a href="fundandwithdraw.html" class="dash-content">
+                                <div class="dash-image image-fund">
+                                    <img src="../assets/images/fund.png" alt="">
+                                </div>
+                                <p>Fund & Withdraw</p>
+                            </a>
+    
+                            <a href="#" class="dash-content">
+                                <div class="dash-image image-business">
+                                    <img src="../assets/images/business.png" alt="">
+                                </div>
+                                <p>Business Verification</p>
+                            </a>
+                        </div>
+        
+                        <div class="searchAndWallet">
+                            <!-- <input type="text" placeholder="Search">
+                            <img class="searchicon" src="../assets/images/searchicon.png" alt=""> -->
+                            <div class="wallet">
+                                <div class="walletBalance-fund">
+                                    <p>Wallet Balance</p>
+
+                                    <div class="addfund">
+                                        <img src="../assets/images/+.png" alt="">
+                                        <p>Add Funds</p>
+                                    </div>
+                                </div>
+
+                                <strong>NGN 1,123,000.00</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="chart">
+                    <div class="chart-container">
+                        <h1> CHARTS</h1>
+                    </div>
+                </section>
+
+                <section class="accoutstatements">
+                    <!-- <div class="accountStatement-container">
+                        <h1>Account Statement</h1>
+                        <table>
+                            <tr class="tr-ash">
+                                <th>Transaction Id</th>
+                                <th>Date</th>
+                                <th>Opening Balance</th>
+                                <th>Closing Balance</th>
+                                <th>Amount</th>
+                                <th>Type</th>
+                                <th>More</th>
+                                <th></th>
+                            </tr>
+                            <tr class="tr-white">
+                                <td>21345</td>
+                                <td>18/11/2021 01:00PM</td>
+                                <td>30,000.99</td>
+                                <td>23,459,00</td>
+                                <td>32,000.90</td>
+                                <td> Transfer</td>
+                                <td>PB-1612027842</td>
+                                <td><a href="#">Details</a></td>
+                            </tr>
+                            <tr class="tr-ash">
+                                <td>21345</td>
+                                <td>18/11/2021 01:00PM</td>
+                                <td>30,000.99</td>
+                                <td>23,459,00</td>
+                                <td>32,000.90</td>
+                                <td> Transfer</td>
+                                <td>PB-1612027842</td>
+                                <td><a href="#">Details</a></td>
+                            </tr>
+                            <tr class="tr-white">
+                                <td>21345</td>
+                                <td>18/11/2021 01:00PM</td>
+                                <td>30,000.99</td>
+                                <td>23,459,00</td>
+                                <td>32,000.90</td>
+                                <td> Transfer</td>
+                                <td>PB-1612027842</td>
+                                <td><a href="#">Details</a></td>
+                            </tr>
+                        </table>
+                    </div> -->
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

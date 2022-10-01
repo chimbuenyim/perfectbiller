@@ -1,0 +1,191 @@
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.confirm-withdrawal-section {
+  background-color: rgb(112, 111, 111);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.empty-section {
+  width: 20%;
+}
+.confirm-withdrawal-wrapper {
+  width: 80%;
+}
+.confirm-withdrawal {
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+header {
+  padding: 10px;
+  /* width: 100%; */
+  background-color: #ede9fa;
+  display: flex;
+  justify-content: center;
+}
+.header {
+  color: #791c6c;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+header .cancel-icon {
+  position: relative;
+  top: 2px;
+  left: 15vw;
+}
+.cancel-icon a {
+  color: #791c6c;
+  text-decoration: none;
+}
+.charges-wrapper {
+  padding: 5px 20px;
+}
+.charges-wrapper h5 {
+  font-size: 16px;
+  padding: 10px 0;
+  color: #555346;
+}
+.charges {
+  padding: 15px;
+  background-color: #f0f1f2;
+}
+td {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: #3f3e38;
+  font-size: 14px;
+}
+.current-balance {
+  margin: 20px 0;
+  padding: 6px;
+  font-size: 15px;
+  background-color: #e7deeb;
+}
+.current-balance p {
+  color: #ee4034;
+}
+.resend-otp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resend-otp a {
+  /* font-size: 25px; */
+  padding: 15px;
+  text-align: center;
+  width: 40%;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.yes {
+  color: #791c6c;
+  font-weight: 600;
+  background-color: #e2ceeb;
+}
+.close {
+  color: #555346;
+  font-weight: 600;
+  background-color: #e2e3e4;
+}
+@media (max-width: 540px) {
+  .empty-section {
+    display: none;
+  }
+  .confirm-withdrawal-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  .confirm-withdrawal {
+    width: 100%;
+    height: 100vh;
+    justify-content: initial;
+  }
+  .header {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+  header .cancel-icon {
+    position: relative;
+    left: 22vw;
+  }
+  .charges-wrapper {
+    padding: 5px 20px;
+  }
+  .charges-wrapper h5 {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .charges {
+    padding: 0px;
+  }
+  td {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  .current-balance p {
+    font-size: 13px;
+  }
+  .resend-otp a {
+    padding: 15px 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  header {
+    justify-content: space-between;
+  }
+  .header {
+    text-align: left;
+    font-size: 10px;
+  }
+  header .cancel-icon {
+    position: relative;
+    left: 0vw;
+  }
+  td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 11.4px;
+  }
+  .current-balance p {
+    padding-bottom: 2px;
+    font-size: 11.7px;
+  }
+  .resend-otp a {
+    font-size: 11.7px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 1200px) {
+  .confirm-withdrawal {
+    width: 80%;
+  }
+  .header {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  td {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  .current-balance p {
+    font-size: 14px;
+  }
+  .resend-otp a {
+    font-size: 15px;
+  }
+}

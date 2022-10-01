@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+.navlogo{
+    width: 10%;
+}
+.navlogo img{
+    width: 100%;
+}
+.dashnavlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 80%;
+    align-items: center;
+}
+.dashnavlist p{
+    font-size: 14px;
+}
+.icon-image{
+    margin: 0 20px;
+    background-color: #EDE9FA;
+    border-radius: 15px;
+    text-align: center;
+    height: 25px;
+}
+.iconImage-bg-none{
+    background-color:white;
+}
+.icon-image img{
+    width: 100%;
+    height: 20px;
+}
+.phonerecharge-screen{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: inherit;
+}
+.dashboard-phonerecharge{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-menu{
+    cursor: pointer;
+    text-align: right;
+    font-size: 24px;
+    display: none;
+    /* padding: 5px; */
+    color: #3B065E;
+}
+
+.phonerecharge-aside{
+    /* display: flex; */
+    /* display: none; */
+    background-color: #3B065E;
+    height: auto;
+    padding: 30px 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 18%;
+}
+.phonerecharge-aside h3{
+    text-align: center;
+    font-size: 14px;
+    font-weight:800;
+    text-transform: uppercase;
+    color: white;
+    padding: .8rem 3.5rem;
+}
+.phonerecharge-list{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    height: inherit;
+}
+.phonerecharge-list a{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    margin: auto;
+    padding: 18px 30px;
+}
+.phonerecharge-list span{
+    padding-left: 4px;
+    /* display: block; */
+}
+.phonerecharge-list a:hover{
+    background-color: white;
+    color: #3B065E;
+    border-radius: 10px;
+}
+.phonerecharge-list .logout{
+    margin-top: 6rem !important;
+}
+.dashboard-asideicon{
+    margin-right: 1.1rem;
+    font-size: 17px;
+}
+.fa-user-circle{
+    margin-left: 3px;
+    margin-right: .9rem;
+}
+.fa-tools{
+    margin-right: 1.2rem;
+}
+.fa-mobile{
+    margin-left: 5px;
+    margin-right: 1.2rem;
+}
+.fa-cogs{
+    margin-right: .9rem;
+}
+.phonerecharge-section{
+    padding: 10px;
+    padding-bottom: 70px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 70%;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+.phonerecharge-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: .4rem;
+}
+.dashboard-phonerecharge{
+    width: 100%;
+}
+.dashboard-phonerecharge span .dashboard-link{
+    text-decoration: none;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+.dashboard-phonerecharge span .phonerecharge-link{
+    text-decoration: none;
+    font-size: 12px;
+}
+.phonePurchase-form{
+    width: 95%;
+}
+.phonerecharge-form{
+    width: 85%;
+    padding: 30px 0;
+    align-content: center;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    display: none;
+}
+.phonerecharge-form.active{
+    display: block;
+}
+.phonerecharge-form .form{
+    display: flex;
+    height: inherit;
+    width:100% ;
+    padding: 2.5rem 6rem;
+    flex-direction: column;
+    margin: auto;
+}
+.phonerecharge-form .form label{
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 3px;
+    color: #242729;
+}
+.phonerecharge-form .form label.mini-amount{
+    font-weight: lighter;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 1.2rem;
+    color: #3B065E;
+}
+.phonerecharge-form .form input{
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 1.2rem;
+    background-color: #efefef;
+    border: none;
+    outline: none;
+}
+.phoneSubmit{
+    background-color: #3B065E;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+}
+.purchasesuccess-content{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Average Sans', sans-serif;
+}
+.purchased-icon{
+    color: green;
+    font-size: 75px;
+    /* margin: 4rem 0; */
+}
+.purchasesuccess-content span{
+    font-size: 22px;
+}
+.purchasesuccess-content p{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 16px;
+}
+.purchased-btn{
+    padding: 12px;
+    width: 40%;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+.dropDownContent{
+    display: none;
+}
+/* .phoneRechargeDropdown{
+    display: none;
+}
+.backdrop{
+    display: none;
+} */
+@media screen and (max-width:1024px){
+    /* .phonerecharge-screen{
+        height: 100%;
+    } */
+   
+    .phonerecharge-aside{
+        position: absolute;
+        top: 44px;
+        left: -100%;
+        width: 250px;
+        transition: left 0.2s linear;
+        /* visibility: hidden; */
+    }
+    .activate{
+        left: 0 !important;
+    }
+    .active{
+        left: 0;
+    }
+    .phonerecharge-list .logout{
+        margin-top: 16rem !important;
+    }
+    .phonerecharge-section{
+        height: 131vh;
+    }
+    .phonePurchase-form{
+        width: 95%;
+        height: 100vh;
+    }
+    .phonerecharge-form{
+        width: 100%;
+    }
+    .phonerecharge-form form{
+        padding: 2rem;
+    }
+    .dropDownContent{
+        display: flex;
+    }
+    .backdrop{
+        display: none;
+    }
+
+}
+@media screen and (max-width:700px){
+    .navlogo{
+        width: 100%;
+    }
+    .navlogo img {
+        width: 100px;
+    }
+    .icon-image{
+        margin: 0 10px;
+        height: 22px;
+    }
+    .dashnavlist p{
+        font-size: 12px;
+    }
+    .fa-mobile{
+        margin-left: 5px;
+        margin-right: 1.2rem;
+    }
+    .phonerecharge-aside{
+        flex-basis: 100%;
+        width: 229px;
+        left: -100%;
+    }
+    .phoneRechargeDropdown{
+        display: block;
+    }
+    .phonerecharge-list a{
+        display: flex;
+    }
+    .phonerecharge-list span{
+        display: block;
+    }
+    .dashboard-asideicon{
+        font-size: 18px;
+        /* margin-left: 0; */
+    }
+    .phonerecharge-section{
+        padding: 5px;
+    }
+    .phonerecharge-content{
+        width: 100%;
+    }
+    .dashboard-phonerecharge span .dashboard-link{
+        font-size: 15px;
+    }
+    .dashboard-phonerecharge span .phonerecharge-link{
+        font-size: 15px;
+    }
+    .phonePurchase-form{
+        width: 100%;
+        height: 112vh;
+        padding: 0 15px;
+    }
+    .phonerecharge-form .form{
+        padding: 3rem 1rem;
+    }
+    .phoneSubmit{
+        padding: 8px 0;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .purchasesuccess-content span{
+        font-size: 18px;
+    }
+    .purchasesuccess-content p{
+        font-size: 12px;
+    }
+    .purchased-icon{
+        font-size: 35px;
+    }
+    .purchased-btn{
+        padding: 8px;
+    }
+    .activate{
+        left: 0;
+    }
+    .dropDownContent{
+        display: flex;
+    }
+    .phoneRechargeDropdown{
+        margin-left: -2rem;
+    }
+    .backdrop{
+        display: none;
+        margin-left: -2rem;
+    }
+    
+}
